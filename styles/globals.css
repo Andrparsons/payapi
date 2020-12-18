@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap");
+
+:root {
+  /* colours */
+  --darkPink: #ba4270;
+  --linkWaterWhite: #fbfcfe;
+  --sanJuanBlue: #36536b;
+  --lightSanJuanBlue: #6c8294;
+  --mirageBlue: #1b262f;
+  --charmPink: #da6d97;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
 }
 
 a {
@@ -13,4 +25,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
 }
