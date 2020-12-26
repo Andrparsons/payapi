@@ -1,65 +1,114 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+
+import Container from "../components/Container/Container";
+import Button from "../components/Button/Button";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>payapi | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+        <Container>
+          <img src="/home/desktop/illustration-phone-mockup.svg" />
+          <div className={styles.introGroup}>
+            <h1>Start building with our APIs for absolutely free.</h1>
+            <form>
+              <input type="email" placeholder="Enter email address" />
+              <Button>Schedule a Demo</Button>
+            </form>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Have any questions? <Link href="/contact">Contact Us</Link>
             </p>
-          </a>
+          </div>
+        </Container>
+
+        <div className={styles.partners}>
+          <Container>
+            <h2>Who we work with</h2>
+            <p>
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+            <div>
+              <img src="/shared/desktop/tesla.svg" />
+              <img src="/shared/desktop/microsoft.svg" />
+              <img src="/shared/desktop/hewlett-packard.svg" />
+              <img src="/shared/desktop/oracle.svg" />
+              <img src="/shared/desktop/google.svg" />
+              <img src="/shared/desktop/nvidia.svg" />
+            </div>
+            <Button>About Us</Button>
+          </Container>
+        </div>
+
+        <div className={styles.features}>
+          <Container>
+            <div className={styles.featureGroup}>
+              <img src="/home/desktop/illustration-easy-to-implement.svg" />
+              <h2>Easy to implement</h2>
+              <p>
+                Our API comes with just a few lines of code. You’ll be up and
+                running in no time. We built our documentation page to integrate
+                payments functionality with ease.
+              </p>
+            </div>
+            <div className={styles.featureGroup}>
+              <img src="/home/desktop/illustration-simple-ui.svg" />
+            </div>
+          </Container>
+        </div>
+
+        <div className={styles.uses}>
+          <Container>
+            <div className={styles.use}>
+              <img src="/home/desktop/icon-personal-finances.svg" />
+              <h3>Personal Finances</h3>
+              <p>
+                Consolidate financial data from multiple sources and categorize
+                transactions up to 2 years of history. Analyze reports to
+                reconcile activities in your account.
+              </p>
+            </div>
+            <div className={styles.use}>
+              <img src="/home/desktop/icon-banking-and-coverage.svg" />
+              <h3>Banking & Coverage</h3>
+              <p>
+                With our platform, you can speed up account onboarding and
+                support ongoing payments for checking, savings, credit card, and
+                brokerage accounts.
+              </p>
+            </div>
+            <div className={styles.use}>
+              <img src="/home/desktop/icon-consumer-payments.svg" />
+              <h3>Consumer Payments</h3>
+              <p>
+                It’s easier to set up secure bank payments with us through a
+                flow designed with the user experience in mind. Customers could
+                instantly authenticate their account.
+              </p>
+            </div>
+          </Container>
+        </div>
+
+        <div className={styles.CTA}>
+          <Container>
+            <h2>Ready to start?</h2>
+            <form>
+              <input type='email' placeholder='Enter email address' />
+              <Button>Schedule a Demo</Button>
+            </form>
+
+          </Container>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

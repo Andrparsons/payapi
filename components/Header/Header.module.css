@@ -1,0 +1,9 @@
+.header {
+  padding-top: 2.5rem;
+}
+
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
