@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
+import CTA from "../components/CTA/CTA";
 
 export default function Home() {
   return (
@@ -97,17 +98,7 @@ export default function Home() {
             </div>
           </Container>
         </div>
-
-        <div className={styles.CTA}>
-          <Container>
-            <h2>Ready to start?</h2>
-            <form>
-              <input type='email' placeholder='Enter email address' />
-              <Button>Schedule a Demo</Button>
-            </form>
-
-          </Container>
-        </div>
+        <CTA />
       </main>
     </div>
   );
