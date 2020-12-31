@@ -1,14 +1,20 @@
 import styles from "./Footer.module.css";
-import Link from 'next/link';
+import Link from "next/link";
 
-import Container from '../Container/Container'
+import Container from "../Container/Container";
+
+// svg imgs
+import Logo from "../ImgComponents/shared/desktop/Logo";
+import Facebook from "../ImgComponents/shared/desktop/Facebook";
+import Twitter from "../ImgComponents/shared/desktop/Twitter";
+import Linkedin from "../ImgComponents/shared/desktop/Linkedin";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <Container>
-        <div className={styles.flexHeader} >
-          <img src='/shared/desktop/logo.svg' alt='payapi logo' />
+        <div className={styles.flexHeader}>
+          <Logo />
           <div>
             <Link href="/pricing">
               <a>Pricing</a>
@@ -22,11 +28,11 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <img src='/shared/desktop/facebook.svg' />
-          <img src='/shared/desktop/twitter.svg' />
-          <img src='/shared/desktop/linkedin.svg' />
+          <Facebook />
+          <Twitter />
+          <Linkedin />
         </div>
       </Container>
     </footer>
-  )
+  );
 }

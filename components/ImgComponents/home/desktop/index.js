@@ -1,0 +1,6 @@
+export { default as IconBankingAndCoverage } from './IconBankingAndCoverage'
+export { default as IconConsumerPayments } from './IconConsumerPayments'
+export { default as IconPersonalFinances } from './IconPersonalFinances'
+export { default as IllustrationEasyToImplement } from './IllustrationEasyToImplement'
+export { default as IllustrationPhoneMockup } from './IllustrationPhoneMockup'
+export { default as IllustrationSimpleUi } from './IllustrationSimpleUi'

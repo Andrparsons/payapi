@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
 import CTA from "../components/CTA/CTA";
+import IllustrationPhoneMockup from '../components/ImgComponents/home/desktop/IllustrationPhoneMockup'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Container>
-          <img src="/home/desktop/illustration-phone-mockup.svg" />
+          <IllustrationPhoneMockup />
           <div className={styles.introGroup}>
             <h1>Start building with our APIs for absolutely free.</h1>
             <form>

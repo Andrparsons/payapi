@@ -13,6 +13,8 @@
   /* colour intentions */
   --appBg: var(--almostWhite);
   --textColour: var(--sanJuanBlue);
+  --secondaryTextColour: var(--linkWaterWhite);
+  --darkAppBg: var(--mirageBlue);
 }
 
 html,
@@ -32,6 +34,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
 }
 
 /* typography */
