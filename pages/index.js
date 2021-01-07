@@ -5,7 +5,23 @@ import styles from "../styles/Home.module.css";
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
 import CTA from "../components/CTA/CTA";
-import IllustrationPhoneMockup from '../components/ImgComponents/home/desktop/IllustrationPhoneMockup'
+
+import {
+  IllustrationEasyToImplement,
+  IllustrationPhoneMockup,
+  IllustrationSimpleUi,
+  IconPersonalFinances,
+  IconBankingAndCoverage,
+  IconConsumerPayments,
+} from "../components/ImgComponents/home/desktop/index";
+import {
+  Tesla,
+  Microsoft,
+  HewlettPackard,
+  Oracle,
+  Google,
+  Nvidia,
+} from "../components/ImgComponents/shared/desktop/index";
 
 export default function Home() {
   return (
@@ -13,11 +29,13 @@ export default function Home() {
       <Head>
         <title>payapi | Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <main className={styles.main}>
         <Container>
-          <IllustrationPhoneMockup />
+          <IllustrationPhoneMockup viewBox="0 0 419 655" width='auto' height='auto' />
+
           <div className={styles.introGroup}>
             <h1>Start building with our APIs for absolutely free.</h1>
             <form>
@@ -40,12 +58,12 @@ export default function Home() {
               accessible experiences for their users.
             </p>
             <div>
-              <img src="/shared/desktop/tesla.svg" />
-              <img src="/shared/desktop/microsoft.svg" />
-              <img src="/shared/desktop/hewlett-packard.svg" />
-              <img src="/shared/desktop/oracle.svg" />
-              <img src="/shared/desktop/google.svg" />
-              <img src="/shared/desktop/nvidia.svg" />
+              <Tesla />
+              <Microsoft />
+              <HewlettPackard />
+              <Oracle />
+              <Google />
+              <Nvidia />
             </div>
             <Button>About Us</Button>
           </Container>
@@ -54,7 +72,7 @@ export default function Home() {
         <div className={styles.features}>
           <Container>
             <div className={styles.featureGroup}>
-              <img src="/home/desktop/illustration-easy-to-implement.svg" />
+              <IllustrationEasyToImplement viewBox='0 0 605 444' width="auto" height='auto' />
               <h2>Easy to implement</h2>
               <p>
                 Our API comes with just a few lines of code. You’ll be up and
@@ -63,7 +81,12 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.featureGroup}>
-              <img src="/home/desktop/illustration-simple-ui.svg" />
+              <IllustrationSimpleUi viewBox='0 0 722 660' width='auto' height='auto' />
+              <h2>Simple UI & UX</h2>
+              <p>
+                Our pre-built form is easy to integrate in your app or website’s
+                checkout flow and designed to optimize conversion.
+              </p>
             </div>
           </Container>
         </div>
@@ -71,7 +94,7 @@ export default function Home() {
         <div className={styles.uses}>
           <Container>
             <div className={styles.use}>
-              <img src="/home/desktop/icon-personal-finances.svg" />
+              <IconPersonalFinances />
               <h3>Personal Finances</h3>
               <p>
                 Consolidate financial data from multiple sources and categorize
@@ -80,7 +103,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.use}>
-              <img src="/home/desktop/icon-banking-and-coverage.svg" />
+              <IconBankingAndCoverage />
               <h3>Banking & Coverage</h3>
               <p>
                 With our platform, you can speed up account onboarding and
@@ -89,7 +112,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.use}>
-              <img src="/home/desktop/icon-consumer-payments.svg" />
+              <IconConsumerPayments />
               <h3>Consumer Payments</h3>
               <p>
                 It’s easier to set up secure bank payments with us through a

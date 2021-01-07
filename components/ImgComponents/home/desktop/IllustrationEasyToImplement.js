@@ -69,32 +69,32 @@ function SvgIllustrationEasyToImplement(props) {
         >
           <tspan x={32} y={86}>
             {
-              "&lt;form id=&quot;form-id&quot; method=&quot;GET&quot;&gt; &lt;/form&gt;"
+              '<form id="form-id" method="GET"> </form>'
             }
           </tspan>
           <tspan x={32} y={106}>
-            {"&lt;script"}
+            {"<script"}
           </tspan>
           <tspan x={32} y={126}>
-            {" src=&quot;https://loremipsum.com/api.js&quot;"}
+            {' src="https://loremipsum.com/api.js"'}
           </tspan>
           <tspan x={32} y={146}>
-            {" data-client-name=&quot;Your Company&apos;s Name&quot;"}
+            {' data-client-name="Your Company\'s Name"'}
           </tspan>
           <tspan x={32} y={166}>
-            {" data-form-id=&quot;form-id&quot;"}
+            {' data-form-id="form-id"'}
           </tspan>
           <tspan x={32} y={186}>
-            {" data-key=&quot;test_key&quot;"}
+            {' data-key="test_key"'}
           </tspan>
           <tspan x={32} y={206}>
-            {" data-product=&quot;transactions&quot;"}
+            {' data-product="transactions"'}
           </tspan>
           <tspan x={32} y={226}>
-            {" data-env=&quot;sandbox&quot;&gt;"}
+            {' data-env="sandbox"'}
           </tspan>
           <tspan x={32} y={246}>
-            {"&lt;/script&gt;"}
+            {"</script>"}
           </tspan>
         </text>
       </g>

@@ -9,6 +9,45 @@
   width: 100%;
 }
 
-.hamburger:hover {
-  cursor: pointer;
+.logoLink {
+  margin-right: 4rem;
+}
+
+.linkGroup {
+  display: flex;
+  align-items: center;
+}
+
+.pageLink {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 2.5rem;
+  opacity: 0.7;
+}
+
+.pageLink:hover {
+  opacity: 1;
+}
+
+.responsiveLinkGroup {
+  display: none;
+}
+
+.headerButton {
+  display: none;
+}
+
+@media (min-width: 725px) {
+  .menuWrapper {
+    display: none;
+  }
+
+  .responsiveLinkGroup {
+    display: initial;
+  }
+
+  .headerButton {
+    display: initial;
+  }
 }

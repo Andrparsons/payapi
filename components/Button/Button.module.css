@@ -1,6 +1,15 @@
 .primary {
   background-color: var(--btnPrimaryBg);
   color: var(--btnPrimaryColour);
+  border-radius: 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.2;
+  border: none;
+  padding: 1em 1.7em;
+  box-shadow: 0.667em 0.667em 1.667em -0.667em rgba(54, 83, 107, 0.25);
+  cursor: pointer;
+  width: 100%;
 }
 
 .primary:hover {
@@ -14,4 +23,10 @@
 
 .secondary:hover {
   background-color: var(--brnSecondaryHover);
+}
+
+@media (min-width: 725px) {
+  .primary {
+    width: initial;
+  }
 }
