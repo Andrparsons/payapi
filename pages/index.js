@@ -25,19 +25,24 @@ import {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>payapi | Home</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Container>
-          <IllustrationPhoneMockup viewBox="0 0 419 655" width='auto' height='auto' />
-
+          <div className={styles.mockupContainer}>
+            <IllustrationPhoneMockup
+              viewBox="-25 0 419 655"
+              width="auto"
+              height="auto"
+            />
+          </div>
           <div className={styles.introGroup}>
-            <h1>Start building with our APIs for absolutely free.</h1>
+            <h1 className={styles.introTitle}>Start building with our APIs for absolutely free.</h1>
             <form>
               <input type="email" placeholder="Enter email address" />
               <Button>Schedule a Demo</Button>
@@ -72,7 +77,11 @@ export default function Home() {
         <div className={styles.features}>
           <Container>
             <div className={styles.featureGroup}>
-              <IllustrationEasyToImplement viewBox='0 0 605 444' width="auto" height='auto' />
+              <IllustrationEasyToImplement
+                viewBox="0 0 605 444"
+                width="auto"
+                height="auto"
+              />
               <h2>Easy to implement</h2>
               <p>
                 Our API comes with just a few lines of code. You’ll be up and
@@ -81,7 +90,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.featureGroup}>
-              <IllustrationSimpleUi viewBox='0 0 722 660' width='auto' height='auto' />
+              <IllustrationSimpleUi
+                viewBox="0 0 722 660"
+                width="auto"
+                height="auto"
+              />
               <h2>Simple UI & UX</h2>
               <p>
                 Our pre-built form is easy to integrate in your app or website’s

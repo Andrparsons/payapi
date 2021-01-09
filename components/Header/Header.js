@@ -34,7 +34,7 @@ export default function Header() {
             </div>
           </div>
           <div className={styles.headerButton}>
-            <Button >Schedule a Demo</Button>
+            <Button>Schedule a Demo</Button>
           </div>
           <div className={styles.menuWrapper}>
             <Menu className={styles.hamburger} onClick={() => setOpen(!open)} />

@@ -127,7 +127,7 @@ function SvgIllustrationPhoneMockup(props) {
           rx={5}
         />
       </defs>
-      <g fill="none" fillRule="evenodd" transform="translate(70 55)">
+      <g fill="none" fillRule="evenodd" transform="translate(53 55)">
         <use
           fill="#000"
           filter="url(#illustration-phone-mockup_svg__a)"

@@ -1,0 +1,5 @@
+.appBackground {
+  background-image: url(/shared/desktop/bg-pattern-circle.svg);
+  background-position: 50% -35rem;
+  background-repeat: no-repeat;
+}

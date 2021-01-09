@@ -1,15 +1,16 @@
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
+import styles from "./AppLayout.module.css";
 
-const  AppLayout = ({children}) => (
-  <div>
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
+const AppLayout = ({ children }) => (
+  <div className={styles.appBackground}>
     <Header />
     {children}
     <Footer />
   </div>
-
 );
 
-export const getLayout = page => <AppLayout>{page}</AppLayout>;
+export const getLayout = (page) => <AppLayout>{page}</AppLayout>;
 
 export default AppLayout;

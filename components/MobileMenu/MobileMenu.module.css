@@ -10,6 +10,10 @@
   position: fixed;
 }
 
+.menuBorder {
+  opacity: 0.15;
+}
+
 .mobileLinks {
   display: flex;
   flex-direction: column;
@@ -22,6 +26,7 @@
   color: var(--secondaryTextColour);
   opacity: 0.7;
   font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1.15;
   margin-bottom: 2rem;
 }

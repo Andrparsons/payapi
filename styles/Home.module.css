@@ -1,1 +1,14 @@
+.mockupContainer {
+  width: 13rem;
+  margin: 0 auto;
+}
 
+.introGroup {
+  text-align: center;
+}
+
+.introTitle {
+  font-size: 2rem;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+}
