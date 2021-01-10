@@ -1,14 +1,29 @@
+.main {
+  text-align: center;
+}
+
 .mockupContainer {
   width: 13rem;
   margin: 0 auto;
-}
-
-.introGroup {
-  text-align: center;
 }
 
 .introTitle {
   font-size: 2rem;
   line-height: 1.12;
   letter-spacing: -0.5px;
+}
+
+.emailForm input {
+  margin-bottom: 1rem;
+}
+
+.partners {
+  display: grid;
+  background-color: var(--darkAppBg);
+  color: var(--secondaryTextColour);
+}
+
+.partnerLogos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

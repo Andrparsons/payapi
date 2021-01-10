@@ -1,0 +1,12 @@
+.default {
+  width: 100%;
+  min-width: 0;
+  max-width: 430px;
+  color: var(--textColour);
+  border-radius: 1.5rem;
+  border: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 1em 1.7em;
+  box-shadow: 0.667em 0.667em 1.667em -0.667em rgba(54, 83, 107, 0.25);
+}

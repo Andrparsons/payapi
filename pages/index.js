@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
@@ -5,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
 import CTA from "../components/CTA/CTA";
+import FormInput from "../components/FormInput/FormInput";
 
 import {
   IllustrationEasyToImplement,
@@ -24,6 +27,7 @@ import {
 } from "../components/ImgComponents/shared/desktop/index";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
   return (
     <div>
       <Head>
@@ -32,7 +36,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <main>
+      <main className={styles.main}>
         <Container>
           <div className={styles.mockupContainer}>
             <IllustrationPhoneMockup
@@ -42,9 +46,16 @@ export default function Home() {
             />
           </div>
           <div className={styles.introGroup}>
-            <h1 className={styles.introTitle}>Start building with our APIs for absolutely free.</h1>
-            <form>
-              <input type="email" placeholder="Enter email address" />
+            <h1 className={styles.introTitle}>
+              Start building with our APIs for absolutely free.
+            </h1>
+            <form className={styles.emailForm}>
+              <FormInput
+                placeholder="Enter email address"
+                type="email"
+                value={email}
+                setValue={setEmail}
+              />
               <Button>Schedule a Demo</Button>
             </form>
             <p>
@@ -62,7 +73,7 @@ export default function Home() {
               provide developers with the tools they need to create easy and
               accessible experiences for their users.
             </p>
-            <div>
+            <div className={styles.partnerLogos}>
               <Tesla />
               <Microsoft />
               <HewlettPackard />

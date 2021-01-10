@@ -13,24 +13,24 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <Container>
-        <div className={styles.flexHeader}>
-          <Logo />
-          <div>
+        <div className={styles.flexFooter}>
+          <div className={styles.footerLinks}>
+            <Logo className={styles.footerLogo} />
             <Link href="/pricing">
-              <a>Pricing</a>
+              <a className={styles.footerLink}>Pricing</a>
             </Link>
             <Link href="/about">
-              <a>About</a>
+              <a className={styles.footerLink}>About</a>
             </Link>
             <Link href="/contact">
-              <a>Contact</a>
+              <a className={styles.footerLink}>Contact</a>
             </Link>
           </div>
-        </div>
-        <div>
-          <Facebook />
-          <Twitter />
-          <Linkedin />
+          <div className={styles.footerIcons}>
+            <Facebook />
+            <Twitter />
+            <Linkedin />
+          </div>
         </div>
       </Container>
     </footer>
