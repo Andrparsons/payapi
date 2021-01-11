@@ -56,16 +56,12 @@ export default function About() {
               <hr />
               <p>Teams Members</p>
               <h2>300+</h2>
-              <hr />
             </div>
             <div className={styles.stat}>
-              <hr />
               <p>Offices in the US</p>
               <h2>3</h2>
-              <hr />
             </div>
             <div className={styles.stat}>
-              <hr />
               <p>Transactions analyzed</p>
               <h2>10M+</h2>
               <hr />

@@ -58,16 +58,19 @@ export default function Home() {
               />
               <Button>Schedule a Demo</Button>
             </form>
-            <p>
-              Have any questions? <Link href="/contact">Contact Us</Link>
+            <p className={styles.questions}>
+              Have any questions?{" "}
+              <Link href="/contact">
+                <a className={styles.inlineLink}>Contact Us</a>
+              </Link>
             </p>
           </div>
         </Container>
 
         <div className={styles.partners}>
           <Container>
-            <h2>Who we work with</h2>
-            <p>
+            <h2 className={styles.partnerTitle}>Who we work with</h2>
+            <p className={styles.darkText}>
               Today, millions of people around the world have successfully
               connected their accounts to apps they love using our API. We
               provide developers with the tools they need to create easy and

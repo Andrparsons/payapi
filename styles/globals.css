@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;500;700&display=swap&family=Roboto+Mono&display=swap");
 
 :root {
   /* colours */
@@ -12,8 +12,9 @@
 
   /* colour intentions */
   --appBg: var(--almostWhite);
-  --textColour: var(--sanJuanBlue);
+  --textColour: var(--lightSanJuanBlue);
   --secondaryTextColour: var(--linkWaterWhite);
+  --HeaderColor: var(--sanJuanBlue);
   --darkAppBg: var(--mirageBlue);
   --btnPrimaryBg: var(--darkPink);
   --btnPrimaryColour: var(--linkWaterWhite);
@@ -38,6 +39,12 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.87;
+}
+
 img {
   width: 100%;
 }
@@ -49,4 +56,18 @@ h2,
 h3,
 h4 {
   font-family: "DM Serif Display", serif;
+  color: var(--HeaderColor);
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.12;
+  letter-spacing: -0.25px;
+}
+
+h3 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.39;
+  font-weight: 700;
 }

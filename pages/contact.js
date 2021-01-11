@@ -5,6 +5,15 @@ import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 import Button from "../components/Button/Button";
 
+import {
+  Tesla,
+  Microsoft,
+  HewlettPackard,
+  Oracle,
+  Google,
+  Nvidia,
+} from "../components/ImgComponents/shared/desktop/index";
+
 export default function Contact() {
   return (
     <div className={styles.container}>
@@ -29,6 +38,20 @@ export default function Contact() {
             <Button>Submit</Button>
           </form>
         </Container>
+
+        <div>
+          <Container>
+            <h2>Join the thousands of innovators already building with us</h2>
+            <div className={styles.partnerLogos}>
+              <Tesla />
+              <Microsoft />
+              <HewlettPackard />
+              <Oracle />
+              <Google />
+              <Nvidia />
+            </div>
+          </Container>
+        </div>
 
         <CTA />
       </main>

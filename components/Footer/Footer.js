@@ -15,7 +15,11 @@ export default function Footer() {
       <Container>
         <div className={styles.flexFooter}>
           <div className={styles.footerLinks}>
-            <Logo className={styles.footerLogo} />
+            <Link href="/">
+              <a>
+                <Logo className={styles.footerLogo} />
+              </a>
+            </Link>
             <Link href="/pricing">
               <a className={styles.footerLink}>Pricing</a>
             </Link>
