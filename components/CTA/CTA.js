@@ -18,6 +18,7 @@ const CTA = () => {
             type="email"
             value={email}
             setValue={setEmail}
+            style='ctaSpace'
           />
           <Button>Schedule a Demo</Button>
         </form>

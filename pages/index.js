@@ -69,13 +69,6 @@ export default function Home() {
 
         <div className={styles.partners}>
           <Container>
-            <h2 className={styles.partnerTitle}>Who we work with</h2>
-            <p className={styles.darkText}>
-              Today, millions of people around the world have successfully
-              connected their accounts to apps they love using our API. We
-              provide developers with the tools they need to create easy and
-              accessible experiences for their users.
-            </p>
             <div className={styles.partnerLogos}>
               <Tesla />
               <Microsoft />
@@ -84,7 +77,18 @@ export default function Home() {
               <Google />
               <Nvidia />
             </div>
-            <Button>About Us</Button>
+            <h2 className={styles.partnerTitle}>Who we work with</h2>
+            <p className={styles.darkText}>
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+            <Link href="/about">
+              <a>
+                <Button btnStyle="secondary">About Us</Button>
+              </a>
+            </Link>
           </Container>
         </div>
 
@@ -92,7 +96,7 @@ export default function Home() {
           <Container>
             <div className={styles.featureGroup}>
               <IllustrationEasyToImplement
-                viewBox="0 0 605 444"
+                viewBox="-25 0 605 444"
                 width="auto"
                 height="auto"
               />
@@ -105,7 +109,7 @@ export default function Home() {
             </div>
             <div className={styles.featureGroup}>
               <IllustrationSimpleUi
-                viewBox="0 0 722 660"
+                viewBox="-25 0 722 660"
                 width="auto"
                 height="auto"
               />

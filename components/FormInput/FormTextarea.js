@@ -1,23 +1,21 @@
 import styles from "./FormInput.module.css";
 
-const FormInput = ({
+const FormTextarea = ({
   placeholder = "Input Text...",
-  type,
   value,
   setValue,
   style = "default",
   required = false
 }) => {
   return (
-    <input
+    <textarea
       className={styles[style]}
-      type={type}
       value={value}
       onChange={(e) => setValue(e.target.value)}
       placeholder={placeholder}
       required={required}
-    ></input>
+    ></textarea>
   );
 };
 
-export default FormInput;
+export default FormTextarea;

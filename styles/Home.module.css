@@ -29,6 +29,7 @@
   display: grid;
   background-color: var(--darkAppBg);
   color: var(--secondaryTextColour);
+  padding: 5rem 0;
 }
 
 .partnerTitle {
@@ -42,4 +43,24 @@
 
 .darkText {
   opacity: 0.7;
+}
+
+/* pricing */
+
+.checkedList {
+  list-style-image: url(/shared/desktop/icon-check.svg);
+}
+
+.pricingList {
+  text-align: initial;
+}
+
+.bigNumber {
+  font-size: 3.5rem;
+  line-height: 1.29;
+  letter-spacing: -0.43px;
+}
+
+.highlight {
+  color: var(--highlightTextColour);
 }

@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 import Button from "../components/Button/Button";
+import FormInput from "../components/FormInput/FormInput";
+import FormTextarea from "../components/FormInput/FormTextarea";
 
 import {
   Tesla,
@@ -15,6 +18,13 @@ import {
 } from "../components/ImgComponents/shared/desktop/index";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [title, setTitle] = useState("");
+  const [message, setMessage] = useState("");
+  const [check, setCheck] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -26,12 +36,38 @@ export default function Contact() {
         <Container>
           <h1>Submit a help request and we'll get in touch shortly.</h1>
           <form>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email Address" />
-            <input type="text" placeholder="Company Name" />
-            <input type="text" placeholder="Title" />
-            <textarea placeholder="Message" />
-            <input type="check" />
+            <FormInput
+              type="text"
+              placeholder="Name"
+              required={true}
+              value={name}
+              setValue={setName}
+            />
+            <FormInput
+              type="email"
+              placeholder="Email Address"
+              required={true}
+              value={email}
+              setValue={setEmail}
+            />
+            <FormInput
+              type="text"
+              placeholder="Company Name"
+              value={company}
+              setValue={setCompany}
+            />
+            <FormInput
+              type="text"
+              placeholder="Title"
+              value={title}
+              setValue={setTitle}
+            />
+            <FormTextarea
+              placeholder="Message"
+              value={message}
+              setValue={setMessage}
+            />
+            <input type="checkbox" />
             <label>
               Stay up-to-date with company announcements and updates to our API
             </label>

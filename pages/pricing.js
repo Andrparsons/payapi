@@ -18,69 +18,69 @@ export default function Pricing() {
           <h1>Pricing</h1>
           <div className={styles.pricingGroups}>
             <div className={styles.pricingGroup}>
-              <h3>Free Plan</h3>
+              <h4 className={styles.highlight}>Free Plan</h4>
               <p>
                 Build and test using our core set of products with up to 100 API
                 requests
               </p>
-              <h2>$0.00</h2>
+              <h2 className={styles.bigNumber}>$0.00</h2>
 
               <hr />
-              <ul>
-                <li>Transactions</li>
-                <li>Auth</li>
-                <li>Identity</li>
+              <ul className={styles.pricingList}>
+                <li className={styles.checkedList}>Transactions</li>
+                <li className={styles.checkedList}>Auth</li>
+                <li className={styles.checkedList}>Identity</li>
                 <li>Investments</li>
                 <li>Assets</li>
-                <li>Liability</li>
-                <li>Liability</li>
+                <li>Liabilities</li>
+                <li>Income</li>
               </ul>
               <hr />
-              <Button>Request Access</Button>
+              <Button btnStyle="secondary">Request Access</Button>
             </div>
 
             <div className={styles.pricingGroup}>
-              <h3>Basic Plan</h3>
+              <h4 className={styles.highlight}>Basic Plan</h4>
               <p>
                 Launch your project with unlimited requests and no contractual
                 minimums
               </p>
-              <h2>$249.00</h2>
+              <h2 className={styles.bigNumber}>$249.00</h2>
 
               <hr />
-              <ul>
-                <li>Transactions</li>
-                <li>Auth</li>
-                <li>Identity</li>
-                <li>Investments</li>
-                <li>Assets</li>
-                <li>Liability</li>
-                <li>Liability</li>
+              <ul className={styles.pricingList}>
+                <li className={styles.checkedList}>Transactions</li>
+                <li className={styles.checkedList}>Auth</li>
+                <li className={styles.checkedList}>Identity</li>
+                <li className={styles.checkedList}>Investments</li>
+                <li className={styles.checkedList}>Assets</li>
+                <li>Liabilities</li>
+                <li>Income</li>
               </ul>
               <hr />
-              <Button>Request Access</Button>
+              <Button btnStyle="secondary">Request Access</Button>
             </div>
 
             <div className={styles.pricingGroup}>
-              <h3>Premium Plan</h3>
+              <h4 className={styles.highlight}>Premium Plan</h4>
               <p>
                 Get tailored solutions, volume pricing, and dedicated support
                 for your team
               </p>
-              <h2>$499.00</h2>
+              <h2 className={styles.bigNumber}>$499.00</h2>
 
               <hr />
-              <ul>
-                <li>Transactions</li>
-                <li>Auth</li>
-                <li>Identity</li>
-                <li>Investments</li>
-                <li>Assets</li>
-                <li>Liability</li>
-                <li>Liability</li>
+              <ul className={styles.pricingList}>
+                <li className={styles.checkedList}>Transactions</li>
+                <li className={styles.checkedList}>Auth</li>
+                <li className={styles.checkedList}>Identity</li>
+                <li className={styles.checkedList}>Investments</li>
+                <li className={styles.checkedList}>Assets</li>
+                <li className={styles.checkedList}>Liabilities</li>
+                <li className={styles.checkedList}>Income</li>
               </ul>
               <hr />
-              <Button>Request Access</Button>
+              <Button btnStyle="secondary">Request Access</Button>
             </div>
           </div>
         </Container>
