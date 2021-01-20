@@ -2,8 +2,19 @@
   text-align: center;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
 .mockupContainer {
-  width: 13rem;
+  width: 100%;
+  max-width: 13rem;
+  margin: 0 auto;
+}
+
+.introGroup {
+  max-width: 573px;
   margin: 0 auto;
 }
 
@@ -11,10 +22,74 @@
   font-size: 2rem;
   line-height: 1.12;
   letter-spacing: -0.5px;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+@media (min-width: 650px) {
+  .mockupContainer {
+    max-width: 16rem;
+  }
+
+  .introTitle {
+    font-size: 3rem;
+    line-height: 1.17;
+    letter-spacing: -0.37px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    text-align: left;
+  }
+
+  .mockupContainer {
+    max-width: 26.25rem;
+    margin: 0;
+  }
+
+  .intro {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .introGroup {
+    max-width: 550px;
+    margin: 0;
+  }
+  .introTitle {
+    font-size: 4.5rem;
+    line-height: 1;
+    letter-spacing: -0.55px;
+  }
 }
 
 .emailForm input {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 573px) {
+  .emailForm {
+    display: flex;
+    margin: 0 auto;
+    max-width: 445px;
+  }
+
+  .emailForm input {
+    margin-bottom: 0;
+  }
+
+  .emailForm button {
+    min-width: 10.9375rem;
+    margin-left: -3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .emailForm {
+    margin: 0;
+  }
 }
 
 .questions {

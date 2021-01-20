@@ -38,32 +38,34 @@ export default function Home() {
 
       <main className={styles.main}>
         <Container>
-          <div className={styles.mockupContainer}>
-            <IllustrationPhoneMockup
-              viewBox="-25 0 419 655"
-              width="auto"
-              height="auto"
-            />
-          </div>
-          <div className={styles.introGroup}>
-            <h1 className={styles.introTitle}>
-              Start building with our APIs for absolutely free.
-            </h1>
-            <form className={styles.emailForm}>
-              <FormInput
-                placeholder="Enter email address"
-                type="email"
-                value={email}
-                setValue={setEmail}
+          <div className={styles.intro}>
+            <div className={styles.mockupContainer}>
+              <IllustrationPhoneMockup
+                viewBox="-25 -25 419 655"
+                width="auto"
+                height="auto"
               />
-              <Button>Schedule a Demo</Button>
-            </form>
-            <p className={styles.questions}>
-              Have any questions?{" "}
-              <Link href="/contact">
-                <a className={styles.inlineLink}>Contact Us</a>
-              </Link>
-            </p>
+            </div>
+            <div className={styles.introGroup}>
+              <h1 className={styles.introTitle}>
+                Start building with our APIs for absolutely free.
+              </h1>
+              <form className={styles.emailForm}>
+                <FormInput
+                  placeholder="Enter email address"
+                  type="email"
+                  value={email}
+                  setValue={setEmail}
+                />
+                <Button>Schedule a Demo</Button>
+              </form>
+              <p className={styles.questions}>
+                Have any questions?{" "}
+                <Link href="/contact">
+                  <a className={styles.inlineLink}>Contact Us</a>
+                </Link>
+              </p>
+            </div>
           </div>
         </Container>
 
