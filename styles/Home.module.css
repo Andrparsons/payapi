@@ -108,19 +108,32 @@
 
 .partnerTitle {
   color: var(--secondaryTextColour);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.partnerContent {
+  margin-top: 3.5rem;
+}
+
+.partnerText {
+  margin-bottom: 2rem;
 }
 
 .partnerLogos {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-  justify-content: space-between;
-  max-width: 400px;
+  justify-content: center;
+  max-width: 250px;
   margin: 0 auto;
 }
 
-.partnerLogos svg {
-  max-width: max-content;
+@media (min-width: 370px) {
+  .partnerLogos {
+    max-width: 400px;
+    justify-content: space-between;
+  }
 }
 
 .darkText {
