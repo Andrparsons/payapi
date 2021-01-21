@@ -36,8 +36,8 @@ export default function MobileMenu({ open, setOpen }) {
               Contact
             </a>
           </Link>
+          <Button>Schedule a Demo</Button>
         </div>
-        <Button>Schedule a Demo</Button>
       </Container>
     </div>
   );

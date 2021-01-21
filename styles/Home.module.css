@@ -101,7 +101,6 @@
 }
 
 .partners {
-  display: grid;
   background-color: var(--darkAppBg);
   color: var(--secondaryTextColour);
   padding: 5rem 0;
@@ -112,8 +111,16 @@
 }
 
 .partnerLogos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.partnerLogos svg {
+  max-width: max-content;
 }
 
 .darkText {
