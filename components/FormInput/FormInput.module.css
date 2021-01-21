@@ -16,3 +16,7 @@
 .ctaSpace {
   margin-bottom: 1rem;
 }
+
+.default:focus {
+  outline: none;
+}
