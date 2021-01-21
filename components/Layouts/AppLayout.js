@@ -6,7 +6,6 @@ import Footer from "../Footer/Footer";
 
 const AppLayout = ({ children }) => {
   const router = useRouter();
-  console.log(router);
   let backgroundStyle = 'appBackground';
 
   if (router.route === '/') {
