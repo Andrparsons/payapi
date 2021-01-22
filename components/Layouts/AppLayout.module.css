@@ -20,13 +20,13 @@
 @media (min-width: 1000px) {
   .homeBackground {
     background-size: auto;
-    background-position: 100% -10rem;
+    background-position: 125% -10rem;
   }
 }
 
 @media (min-width: 1500px) {
   .homeBackground {
     background-size: auto;
-    background-position: 110% -10rem;
+    background-position: 100% -10rem;
   }
 }
