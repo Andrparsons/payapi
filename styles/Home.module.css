@@ -104,6 +104,12 @@
   background-color: var(--darkAppBg);
   color: var(--secondaryTextColour);
   padding: 5rem 0;
+  text-align: center;
+}
+
+.partnerFlex {
+  display: flex;
+  flex-direction: column;
 }
 
 .partnerTitle {
@@ -117,7 +123,8 @@
 }
 
 .partnerText {
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 456px;
 }
 
 .partnerLogos {
@@ -133,6 +140,49 @@
   .partnerLogos {
     max-width: 400px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 650px) {
+  .partners {
+    background-image: url(/shared/desktop/bg-pattern-circle.svg);
+    background-position: 50% -33.5rem;
+    background-repeat: no-repeat;
+    padding: 5.5rem 0;
+  }
+
+  .partnerLogos {
+    max-width: 536px;
+  }
+
+  .partnerContent {
+    margin-top: 4rem;
+  }
+
+  .partnerTitle {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .partners {
+    padding: 6.25rem 0;
+    text-align: left;
+    background-position: -13.5rem -22.5rem;
+  }
+
+  .partnerFlex {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .partnerContent {
+    margin: 0;
+  }
+
+  .partnerLogos {
+    margin: 0;
   }
 }
 

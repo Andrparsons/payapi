@@ -82,3 +82,11 @@ h4 {
   font-weight: 400;
   letter-spacing: -0.18px;
 }
+
+@media (min-width: 650px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 1.17;
+    letter-spacing: -0.37px;
+  }
+}

@@ -71,27 +71,29 @@ export default function Home() {
 
         <div className={styles.partners}>
           <Container>
-            <div className={styles.partnerLogos}>
-              <Tesla />
-              <Microsoft />
-              <HewlettPackard />
-              <Oracle />
-              <Google />
-              <Nvidia />
-            </div>
-            <div className={styles.partnerContent}>
-              <h2 className={styles.partnerTitle}>Who we work with</h2>
-              <p className={`${styles.darkText} ${styles.partnerText}`}>
-                Today, millions of people around the world have successfully
-                connected their accounts to apps they love using our API. We
-                provide developers with the tools they need to create easy and
-                accessible experiences for their users.
-              </p>
-              <Link href="/about">
-                <a>
-                  <Button btnStyle="secondary">About Us</Button>
-                </a>
-              </Link>
+            <div className={styles.partnerFlex}>
+              <div className={styles.partnerLogos}>
+                <Tesla />
+                <Microsoft />
+                <HewlettPackard />
+                <Oracle />
+                <Google />
+                <Nvidia />
+              </div>
+              <div className={styles.partnerContent}>
+                <h2 className={styles.partnerTitle}>Who we work with</h2>
+                <p className={`${styles.darkText} ${styles.partnerText}`}>
+                  Today, millions of people around the world have successfully
+                  connected their accounts to apps they love using our API. We
+                  provide developers with the tools they need to create easy and
+                  accessible experiences for their users.
+                </p>
+                <Link href="/about">
+                  <a>
+                    <Button btnStyle="secondary">About Us</Button>
+                  </a>
+                </Link>
+              </div>
             </div>
           </Container>
         </div>
