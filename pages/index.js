@@ -99,33 +99,43 @@ export default function Home() {
         </div>
 
         <div className={styles.features}>
-          <Container>
-            <div className={styles.featureGroup}>
+          <div className={styles.featureGroup}>
+            <div className={styles.implementMockup}>
               <IllustrationEasyToImplement
-                viewBox="-25 0 605 444"
+                viewBox="27 55 500 325"
                 width="auto"
                 height="auto"
               />
-              <h2>Easy to implement</h2>
-              <p>
-                Our API comes with just a few lines of code. You’ll be up and
-                running in no time. We built our documentation page to integrate
-                payments functionality with ease.
-              </p>
             </div>
-            <div className={styles.featureGroup}>
+            <Container>
+              <div className={styles.featureContent}>
+                <h2 className={styles.featureGroupTitle}>Easy to implement</h2>
+                <p>
+                  Our API comes with just a few lines of code. You’ll be up and
+                  running in no time. We built our documentation page to
+                  integrate payments functionality with ease.
+                </p>
+              </div>
+            </Container>
+          </div>
+          <div className={styles.featureGroup}>
+            <div className={styles.uiMockup}>
               <IllustrationSimpleUi
-                viewBox="-25 0 722 660"
+                viewBox="25 55 625 560"
                 width="auto"
                 height="auto"
               />
-              <h2>Simple UI & UX</h2>
-              <p>
-                Our pre-built form is easy to integrate in your app or website’s
-                checkout flow and designed to optimize conversion.
-              </p>
             </div>
-          </Container>
+            <Container>
+              <div className={styles.featureContent}>
+                <h2 className={styles.featureGroupTitle}>Simple UI & UX</h2>
+                <p>
+                  Our pre-built form is easy to integrate in your app or
+                  website’s checkout flow and designed to optimize conversion.
+                </p>
+              </div>
+            </Container>
+          </div>
         </div>
 
         <div className={styles.uses}>

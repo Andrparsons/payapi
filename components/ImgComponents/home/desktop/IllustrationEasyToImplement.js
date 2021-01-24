@@ -10,30 +10,6 @@ function SvgIllustrationEasyToImplement(props) {
       {...props}
     >
       <defs>
-        <filter
-          x="-24.2%"
-          y="-37.9%"
-          width="159.6%"
-          height="193.3%"
-          filterUnits="objectBoundingBox"
-          id="illustration-easy-to-implement_svg__a"
-        >
-          <feOffset
-            dx={25}
-            dy={25}
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          />
-          <feGaussianBlur
-            stdDeviation={40}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0.212302148 0 0 0 0 0.325209598 0 0 0 0 0.419299139 0 0 0 0.300726617 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
         <rect
           id="illustration-easy-to-implement_svg__b"
           x={0}

@@ -39,30 +39,7 @@ function SvgIllustrationSimpleUi(props) {
             in="shadowBlurOuter1"
           />
         </filter>
-        <filter
-          x="-41.7%"
-          y="-21.5%"
-          width="202.9%"
-          height="153.1%"
-          filterUnits="objectBoundingBox"
-          id="illustration-simple-ui_svg__a"
-        >
-          <feOffset
-            dx={25}
-            dy={25}
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          />
-          <feGaussianBlur
-            stdDeviation={40}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0.212302148 0 0 0 0 0.325209598 0 0 0 0 0.419299139 0 0 0 0.300726617 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
+       
         <filter
           x="-8.6%"
           y="-43.8%"
@@ -150,30 +127,7 @@ function SvgIllustrationSimpleUi(props) {
             in="shadowBlurOuter1"
           />
         </filter>
-        <filter
-          x="-41.7%"
-          y="-21.5%"
-          width="202.9%"
-          height="153.1%"
-          filterUnits="objectBoundingBox"
-          id="illustration-simple-ui_svg__i"
-        >
-          <feOffset
-            dx={25}
-            dy={25}
-            in="SourceAlpha"
-            result="shadowOffsetOuter1"
-          />
-          <feGaussianBlur
-            stdDeviation={40}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0.212302148 0 0 0 0 0.325209598 0 0 0 0 0.419299139 0 0 0 0.300726617 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
+       
         <filter
           x="-8.6%"
           y="-43.8%"
