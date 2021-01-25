@@ -99,15 +99,15 @@ export default function Home() {
         </div>
 
         <div className={styles.features}>
-          <div className={styles.featureGroup}>
-            <div className={styles.implementMockup}>
-              <IllustrationEasyToImplement
-                viewBox="27 55 500 325"
-                width="auto"
-                height="auto"
-              />
-            </div>
-            <Container>
+          <div className={styles.featureContainer}>
+            <div className={styles.featureGroup}>
+              <div className={styles.implementMockup}>
+                <IllustrationEasyToImplement
+                  viewBox="27 55 500 325"
+                  width="auto"
+                  height="auto"
+                />
+              </div>
               <div className={styles.featureContent}>
                 <h2 className={styles.featureGroupTitle}>Easy to implement</h2>
                 <p>
@@ -116,17 +116,16 @@ export default function Home() {
                   integrate payments functionality with ease.
                 </p>
               </div>
-            </Container>
-          </div>
-          <div className={styles.featureGroup}>
-            <div className={styles.uiMockup}>
-              <IllustrationSimpleUi
-                viewBox="25 55 625 560"
-                width="auto"
-                height="auto"
-              />
             </div>
-            <Container>
+
+            <div className={styles.featureGroup}>
+              <div className={styles.uiMockup}>
+                <IllustrationSimpleUi
+                  viewBox="25 55 625 560"
+                  width="auto"
+                  height="auto"
+                />
+              </div>
               <div className={styles.featureContent}>
                 <h2 className={styles.featureGroupTitle}>Simple UI & UX</h2>
                 <p>
@@ -134,12 +133,12 @@ export default function Home() {
                   website’s checkout flow and designed to optimize conversion.
                 </p>
               </div>
-            </Container>
+            </div>
           </div>
         </div>
 
-        <div className={styles.uses}>
-          <Container>
+        <Container>
+          <div className={styles.uses}>
             <div className={styles.use}>
               <IconPersonalFinances />
               <h3>Personal Finances</h3>
@@ -167,8 +166,9 @@ export default function Home() {
                 instantly authenticate their account.
               </p>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
+
         <CTA />
       </main>
     </div>

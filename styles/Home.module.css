@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .intro {
     padding-bottom: 0;
   }
@@ -207,7 +207,12 @@
 /* features */
 
 .features {
+}
+
+.featureContainer {
   padding: 5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .featureGroupTitle {
@@ -216,6 +221,8 @@
 }
 
 .featureGroup {
+  display: flex;
+  flex-direction: column;
 }
 
 .featureGroup:last-child {
@@ -225,6 +232,7 @@
 .featureContent {
   max-width: 573px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .implementMockup {
@@ -235,6 +243,65 @@
 .uiMockup {
   max-width: 400px;
   margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+  .features {
+    background-image: url(/shared/desktop/bg-pattern-circle.svg);
+    background-position: 50% -33.5rem;
+    background-repeat: no-repeat;
+  }
+
+  .featureContainer {
+    padding: 9.365rem 0;
+  }
+
+  .featureGroup {
+    flex-direction: row;
+  }
+
+  .featureGroup:last-child {
+    flex-direction: row-reverse;
+  }
+
+  .implementMockup {
+    flex-basis: 445px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .uiMockup {
+    flex-basis: 400px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .featureContent {
+    max-width: 445px;
+    margin: 0;
+  }
+}
+
+/* uses */
+
+.uses {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.use {
+  margin-bottom: 3rem;
+  max-width: 350px;
+}
+
+@media (min-width: 650px) {
+  .uses {
+    flex-direction: row;
+    gap: 0.625rem;
+  }
 }
 
 /* pricing */
