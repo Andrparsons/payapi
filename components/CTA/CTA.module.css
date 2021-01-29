@@ -1,7 +1,73 @@
 .CTA {
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 .formInput {
   margin-bottom: 1rem;
+}
+
+.CTATitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.CTAcontainer {
+  padding: 0 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailForm input {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 573px) {
+  .CTA {
+    margin: 5.5rem 0;
+  }
+
+  .CTAcontainer {
+    padding: 0 2.5rem;
+  }
+
+  .CTATitle {
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .emailForm {
+    display: flex;
+    margin: 0 auto;
+    max-width: 445px;
+  }
+
+  .emailForm input {
+    margin-bottom: 0;
+  }
+
+  .emailForm button {
+    min-width: 10.9375rem;
+    margin-left: -3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .CTAcontainer {
+    padding: 0;
+    max-width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .emailForm {
+    margin: 0;
+  }
+
+  .CTATitle {
+    margin: 0;
+  }
 }

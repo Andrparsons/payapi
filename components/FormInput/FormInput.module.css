@@ -2,7 +2,7 @@
 .ctaSpace {
   width: 100%;
   min-width: 0;
-  max-width: 430px;
+  /* max-width: 430px; */
   color: var(--textColour);
   border-radius: 1.5rem;
   border: none;

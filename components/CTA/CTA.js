@@ -10,9 +10,9 @@ const CTA = () => {
 
   return (
     <div className={styles.CTA}>
-      <Container>
-        <h2>Ready to start?</h2>
-        <form>
+      <div className={styles.CTAcontainer}>
+        <h2 className={styles.CTATitle}>Ready to start?</h2>
+        <form className={styles.emailForm}>
           <FormInput
             placeholder="Enter email address"
             type="email"
@@ -22,7 +22,7 @@ const CTA = () => {
           />
           <Button>Schedule a Demo</Button>
         </form>
-      </Container>
+      </div>
     </div>
   );
 };

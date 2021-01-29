@@ -141,7 +141,7 @@ export default function Home() {
           <div className={styles.uses}>
             <div className={styles.use}>
               <IconPersonalFinances />
-              <h3>Personal Finances</h3>
+              <h3 className={styles.useTitle}>Personal Finances</h3>
               <p>
                 Consolidate financial data from multiple sources and categorize
                 transactions up to 2 years of history. Analyze reports to
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             <div className={styles.use}>
               <IconBankingAndCoverage />
-              <h3>Banking & Coverage</h3>
+              <h3 className={styles.useTitle}>Banking & Coverage</h3>
               <p>
                 With our platform, you can speed up account onboarding and
                 support ongoing payments for checking, savings, credit card, and
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
             <div className={styles.use}>
               <IconConsumerPayments />
-              <h3>Consumer Payments</h3>
+              <h3 className={styles.useTitle}>Consumer Payments</h3>
               <p>
                 It’s easier to set up secure bank payments with us through a
                 flow designed with the user experience in mind. Customers could

@@ -97,7 +97,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .emailForm {
     margin: 0;
   }
@@ -206,9 +206,6 @@
 
 /* features */
 
-.features {
-}
-
 .featureContainer {
   padding: 5rem 0;
   max-width: 1200px;
@@ -243,6 +240,12 @@
 .uiMockup {
   max-width: 400px;
   margin: 0 auto;
+}
+
+@media (min-width: 650px) {
+  .featureContainer {
+    padding: 6.25rem 0;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -292,15 +295,30 @@
   align-items: center;
 }
 
+.useTitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .use {
   margin-bottom: 3rem;
   max-width: 350px;
+  flex: 1 1 0px;
+}
+
+.use:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 650px) {
   .uses {
     flex-direction: row;
+    align-items: initial;
     gap: 0.625rem;
+  }
+
+  .use {
+    margin-bottom: 0;
   }
 }
 
