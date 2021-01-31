@@ -1,0 +1,60 @@
+/* pricing */
+
+.main {
+  text-align: center;
+}
+
+.pricingTitle {
+  margin-bottom: 0;
+}
+
+.pricingGroup {
+  margin-top: 3rem;
+}
+
+.pricingList {
+  text-align: initial;
+  width: max-content;
+  margin: 0 auto;
+  color: var(--listColour);
+  font-weight: 500;
+}
+
+.pricingList li {
+  margin-bottom: 0.5rem;
+}
+
+.pricingList li:last-child {
+  margin-bottom: 0;
+}
+
+.uncheckedListItem {
+  list-style-type: none;
+  opacity: 0.5;
+}
+
+.checkedListItem {
+  list-style-image: url(/shared/desktop/icon-check.svg);
+  opacity: 1;
+}
+
+.pricingBorder {
+  border-top: 1px solid var(--borderColour);
+  border-bottom: 1px solid var(--borderColour);
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.bigNumber {
+  font-size: 3.5rem;
+  line-height: 1.29;
+  letter-spacing: -0.43px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--highlightTextColour);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

@@ -10,6 +10,8 @@
   --mirageBlue: #1b262f;
   --charmPink: #da6d97;
 
+  --borderColour: rgba(54, 83, 107, 0.25);
+
   /* colour intentions */
   --appBg: var(--almostWhite);
   --textColour: var(--lightSanJuanBlue);
@@ -21,6 +23,7 @@
   --btnPrimaryBg: var(--darkPink);
   --btnPrimaryColour: var(--linkWaterWhite);
   --btnPrimaryHover: var(--charmPink);
+  --listColour: var(--sanJuanBlue);
 }
 
 html,
@@ -85,9 +88,24 @@ h4 {
 }
 
 @media (min-width: 650px) {
+  h1,
   h2 {
     font-size: 3rem;
     line-height: 1.17;
     letter-spacing: -0.37px;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -0.43px;
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.25px;
   }
 }

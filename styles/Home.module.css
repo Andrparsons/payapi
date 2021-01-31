@@ -208,7 +208,7 @@
 
 .featureContainer {
   padding: 5rem 0;
-  max-width: 1200px;
+  max-width: 1182px;
   margin: 0 auto;
 }
 
@@ -251,12 +251,12 @@
 @media (min-width: 1100px) {
   .features {
     background-image: url(/shared/desktop/bg-pattern-circle.svg);
-    background-position: 50% -33.5rem;
+    background-position: bottom right;
     background-repeat: no-repeat;
   }
 
   .featureContainer {
-    padding: 9.365rem 0;
+    padding: 9.365rem 1.2rem;
   }
 
   .featureGroup {
@@ -320,24 +320,4 @@
   .use {
     margin-bottom: 0;
   }
-}
-
-/* pricing */
-
-.checkedList {
-  list-style-image: url(/shared/desktop/icon-check.svg);
-}
-
-.pricingList {
-  text-align: initial;
-}
-
-.bigNumber {
-  font-size: 3.5rem;
-  line-height: 1.29;
-  letter-spacing: -0.43px;
-}
-
-.highlight {
-  color: var(--highlightTextColour);
 }

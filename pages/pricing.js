@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Pricing.module.css";
 
 import Container from "../components/Container/Container";
 import Button from "../components/Button/Button";
@@ -7,7 +7,7 @@ import CTA from "../components/CTA/CTA";
 
 export default function Pricing() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>payapi | Pricing</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,7 +15,7 @@ export default function Pricing() {
 
       <main className={styles.main}>
         <Container>
-          <h1>Pricing</h1>
+          <h1 className={styles.pricingTitle}>Pricing</h1>
           <div className={styles.pricingGroups}>
             <div className={styles.pricingGroup}>
               <h4 className={styles.highlight}>Free Plan</h4>
@@ -24,18 +24,17 @@ export default function Pricing() {
                 requests
               </p>
               <h2 className={styles.bigNumber}>$0.00</h2>
-
-              <hr />
-              <ul className={styles.pricingList}>
-                <li className={styles.checkedList}>Transactions</li>
-                <li className={styles.checkedList}>Auth</li>
-                <li className={styles.checkedList}>Identity</li>
-                <li>Investments</li>
-                <li>Assets</li>
-                <li>Liabilities</li>
-                <li>Income</li>
-              </ul>
-              <hr />
+              <div className={styles.pricingBorder}>
+                <ul className={styles.pricingList}>
+                  <li className={styles.checkedListItem}>Transactions</li>
+                  <li className={styles.checkedListItem}>Auth</li>
+                  <li className={styles.checkedListItem}>Identity</li>
+                  <li className={styles.uncheckedListItem}>Investments</li>
+                  <li className={styles.uncheckedListItem}>Assets</li>
+                  <li className={styles.uncheckedListItem}>Liabilities</li>
+                  <li className={styles.uncheckedListItem}>Income</li>
+                </ul>
+              </div>
               <Button btnStyle="secondary">Request Access</Button>
             </div>
 
@@ -47,17 +46,18 @@ export default function Pricing() {
               </p>
               <h2 className={styles.bigNumber}>$249.00</h2>
 
-              <hr />
-              <ul className={styles.pricingList}>
-                <li className={styles.checkedList}>Transactions</li>
-                <li className={styles.checkedList}>Auth</li>
-                <li className={styles.checkedList}>Identity</li>
-                <li className={styles.checkedList}>Investments</li>
-                <li className={styles.checkedList}>Assets</li>
-                <li>Liabilities</li>
-                <li>Income</li>
-              </ul>
-              <hr />
+              <div className={styles.pricingBorder}>
+                <ul className={styles.pricingList}>
+                  <li className={styles.checkedListItem}>Transactions</li>
+                  <li className={styles.checkedListItem}>Auth</li>
+                  <li className={styles.checkedListItem}>Identity</li>
+                  <li className={styles.checkedListItem}>Investments</li>
+                  <li className={styles.checkedListItem}>Assets</li>
+                  <li className={styles.uncheckedListItem}>Liabilities</li>
+                  <li className={styles.uncheckedListItem}>Income</li>
+                </ul>
+              </div>
+
               <Button btnStyle="secondary">Request Access</Button>
             </div>
 
@@ -69,17 +69,18 @@ export default function Pricing() {
               </p>
               <h2 className={styles.bigNumber}>$499.00</h2>
 
-              <hr />
-              <ul className={styles.pricingList}>
-                <li className={styles.checkedList}>Transactions</li>
-                <li className={styles.checkedList}>Auth</li>
-                <li className={styles.checkedList}>Identity</li>
-                <li className={styles.checkedList}>Investments</li>
-                <li className={styles.checkedList}>Assets</li>
-                <li className={styles.checkedList}>Liabilities</li>
-                <li className={styles.checkedList}>Income</li>
-              </ul>
-              <hr />
+              <div className={styles.pricingBorder}>
+                <ul className={styles.pricingList}>
+                  <li className={styles.checkedListItem}>Transactions</li>
+                  <li className={styles.checkedListItem}>Auth</li>
+                  <li className={styles.checkedListItem}>Identity</li>
+                  <li className={styles.checkedListItem}>Investments</li>
+                  <li className={styles.checkedListItem}>Assets</li>
+                  <li className={styles.checkedListItem}>Liabilities</li>
+                  <li className={styles.checkedListItem}>Income</li>
+                </ul>
+              </div>
+
               <Button btnStyle="secondary">Request Access</Button>
             </div>
           </div>

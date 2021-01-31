@@ -25,6 +25,7 @@
   color: inherit;
   border: 1px solid;
   padding: 1em 2.14em;
+  box-shadow: none;
 }
 
 .secondary:hover {
