@@ -6,10 +6,16 @@
 
 .pricingTitle {
   margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+.pricingGroups {
+  display: flex;
+  flex-direction: column;
 }
 
 .pricingGroup {
-  margin-top: 3rem;
+  margin: 3rem auto 0;
 }
 
 .pricingList {
@@ -18,10 +24,12 @@
   margin: 0 auto;
   color: var(--listColour);
   font-weight: 500;
+  padding-left: 1.5rem;
 }
 
 .pricingList li {
   margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
 .pricingList li:last-child {
@@ -57,4 +65,45 @@
   color: var(--highlightTextColour);
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 750px) {
+  .pricingTitle {
+    margin-top: 4.5rem;
+  }
+
+  .pricingGroups {
+    margin-top: 4.5rem;
+    flex-direction: row;
+    gap: 0.625rem;
+    justify-content: space-between;
+  }
+
+  .pricingGroup {
+    margin: 0;
+    flex: 1 1 0px;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main {
+    text-align: left;
+  }
+
+  .pricingTitle {
+    margin-top: 5.125rem;
+  }
+
+  .pricingList {
+    margin: 0;
+  }
+
+  .pricingGroups {
+    gap: 1.875rem;
+  }
+
+  .pricingGroup {
+    max-width: 350px;
+  }
 }
