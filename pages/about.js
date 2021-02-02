@@ -19,7 +19,7 @@ export default function About() {
           </h1>
         </Container>
 
-        <Container>
+        <div className={styles.aboutGroups}>
           <div className={styles.aboutGroup}>
             <h4>Our Vision</h4>
             <p>
@@ -39,37 +39,37 @@ export default function About() {
               reporting for traditional financial institutions and developers.
             </p>
           </div>
-        </Container>
-
-        <img
-          srcSet="
-                  /about/mobile/image-team-members.jpg 375w,
-                  /about/tablet/image-team-members.jpg 769w,
-                  /about/desktop/image-team-members.jpg 1440w"
-          src="/about/mobile/image-team-members.jpg"
-          alt="Team members"
-        />
-
-        <div className={styles.statsGroup}>
-          <Container>
-            <div className={styles.stat}>
-              <hr />
-              <p>Team Members</p>
-              <h2 className={`${styles.bigNumber} ${styles.highlight}`}>300+</h2>
-            </div>
-            <div className={styles.stat}>
-              <p>Offices in the US</p>
-              <h2 className={`${styles.bigNumber} ${styles.highlight}`}>3</h2>
-            </div>
-            <div className={styles.stat}>
-              <p>Transactions analyzed</p>
-              <h2 className={`${styles.bigNumber} ${styles.highlight}`}>10M+</h2>
-              <hr />
-            </div>
-          </Container>
         </div>
 
-        <Container>
+        <picture>
+          <source
+            media="(min-width:1100px)"
+            srcSet="/about/desktop/image-team-members.jpg"
+          />
+          <source
+            media="(min-width:450px)"
+            srcSet="/about/tablet/image-team-members.jpg"
+          />
+
+          <img src="/about/mobile/image-team-members.jpg" alt="Team members" />
+        </picture>
+
+        <div className={styles.statsGroup}>
+          <div className={styles.stat}>
+            <p>Team Members</p>
+            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>300+</h2>
+          </div>
+          <div className={styles.stat}>
+            <p>Offices in the US</p>
+            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>3</h2>
+          </div>
+          <div className={styles.stat}>
+            <p>Transactions analyzed</p>
+            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>10M+</h2>
+          </div>
+        </div>
+
+        <div className={styles.aboutGroups}>
           <div className={styles.aboutGroup}>
             <h4>The Culture</h4>
             <p>
@@ -88,7 +88,7 @@ export default function About() {
               backgrounds and skills.
             </p>
           </div>
-        </Container>
+        </div>
 
         <CTA />
       </main>
