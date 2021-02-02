@@ -23,6 +23,8 @@
   --btnPrimaryBg: var(--darkPink);
   --btnPrimaryColour: var(--linkWaterWhite);
   --btnPrimaryHover: var(--charmPink);
+  --btnSecondaryHover: var(--sanJuanBlue);
+  --btnSecondaryHoverText: var(--almostWhite);
   --listColour: var(--sanJuanBlue);
 }
 

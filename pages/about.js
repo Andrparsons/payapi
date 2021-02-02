@@ -1,12 +1,12 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/About.module.css";
 
 import Container from "../components/Container/Container";
 import CTA from "../components/CTA/CTA";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>payapi | About</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,7 +14,7 @@ export default function About() {
 
       <main className={styles.main}>
         <Container>
-          <h1>
+          <h1 className={styles.aboutTitle}>
             We empower innovators by delivering access to the financial system
           </h1>
         </Container>

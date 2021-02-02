@@ -7,6 +7,7 @@
   border: none;
   box-shadow: 0.667em 0.667em 1.667em -0.667em rgba(54, 83, 107, 0.25);
   cursor: pointer;
+  letter-spacing: -0.12px;
 }
 
 .primary {
@@ -29,7 +30,8 @@
 }
 
 .secondary:hover {
-  background-color: var(--brnSecondaryHover);
+  background-color: var(--btnSecondaryHover);
+  color: var(--btnSecondaryHoverText);
 }
 
 @media (min-width: 573px) {
