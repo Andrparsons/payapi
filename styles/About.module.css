@@ -1,8 +1,136 @@
 .main {
   text-align: center;
-  margin-top: 3rem;
 }
 
 .aboutTitle {
+  margin: 3rem auto 0;
+  padding: 0 1.5rem;
+  max-width: 573px;
+}
+
+.aboutGroup {
+  margin-top: 3rem;
+  padding: 0 1.5rem;
+}
+
+.aboutGroupTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.aboutPicture {
+  margin-top: 4.75rem;
+}
+
+.statsGroup {
+  margin: 3rem auto 0;
+  max-width: 1100px;
+}
+
+.stat {
+  margin: 2rem 0;
+}
+
+.stat:first-child {
+  border-top: 1px solid var(--borderColour);
+  padding-top: 1rem;
+}
+
+.stat:last-child {
+  border-bottom: 1px solid var(--borderColour);
+  padding-bottom: 1rem;
+}
+
+.statTitle {
+  font-size: 1rem;
+  line-height: 1.49;
+  font-weight: 500;
+  color: var(--HeaderColor);
+  opacity: 0.7;
+}
+
+.bigNumber {
+  font-size: 3.5rem;
+  color: var(--highlightTextColour);
   margin: 0;
+  line-height: 1.29;
+  letter-spacing: -0.43px;
+}
+
+@media (min-width: 650px) {
+  .aboutTitle {
+    margin-top: 4.5rem;
+    font-size: 3rem;
+    padding: 0;
+  }
+
+  .aboutGroup {
+    margin-top: 4rem;
+    padding: 0 2.5rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 223px 1fr;
+    gap: 0.625rem;
+  }
+
+  .aboutGroupTitle {
+    font-size: 2rem;
+    min-width: 150px;
+  }
+
+  .aboutPicture {
+    margin-top: 5.75rem;
+  }
+
+  .statsGroup {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    gap: 0.625rem;
+    text-align: left;
+  }
+
+  .stat {
+    margin: 0;
+    border-top: 1px solid var(--borderColour);
+    border-bottom: 1px solid var(--borderColour);
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main {
+    text-align: left;
+  }
+
+  .titleContainer {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .aboutTitle {
+    margin: 0;
+    margin-top: 5.125rem;
+    font-size: 3.5rem;
+    max-width: 690px;
+  }
+
+  .aboutGroup {
+    max-width: 920px;
+    margin: 3.5rem auto 0;
+    padding: 0;
+  }
+
+  .aboutPicture {
+    margin-top: 6.25rem;
+  }
+
+  .statsGroup {
+    padding: 0;
+    gap: 1.875rem;
+    margin-top: 4.5rem;
+  }
 }

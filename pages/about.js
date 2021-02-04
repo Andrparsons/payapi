@@ -13,15 +13,15 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <Container>
+        <div className={styles.titleContainer}>
           <h1 className={styles.aboutTitle}>
             We empower innovators by delivering access to the financial system
           </h1>
-        </Container>
+        </div>
 
         <div className={styles.aboutGroups}>
           <div className={styles.aboutGroup}>
-            <h4>Our Vision</h4>
+            <h4 className={styles.aboutGroupTitle}>Our Vision</h4>
             <p>
               Our main goal is to build beautiful consumer experiences along
               with developer-friendly infrastructure. The result is an
@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
           <div className={styles.aboutGroup}>
-            <h4>Our Business</h4>
+            <h4 className={styles.aboutGroupTitle}>Our Business</h4>
             <p>
               At the core of our platform is the technical infrastructure APIs
               that connect consumers. Our innovative product provides key
@@ -51,27 +51,31 @@ export default function About() {
             srcSet="/about/tablet/image-team-members.jpg"
           />
 
-          <img src="/about/mobile/image-team-members.jpg" alt="Team members" />
+          <img
+            className={styles.aboutPicture}
+            src="/about/mobile/image-team-members.jpg"
+            alt="Team members"
+          />
         </picture>
 
         <div className={styles.statsGroup}>
           <div className={styles.stat}>
-            <p>Team Members</p>
-            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>300+</h2>
+            <p className={styles.statTitle}>Team Members</p>
+            <h2 className={styles.bigNumber}>300+</h2>
           </div>
           <div className={styles.stat}>
-            <p>Offices in the US</p>
-            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>3</h2>
+            <p className={styles.statTitle}>Offices in the US</p>
+            <h2 className={styles.bigNumber}>3</h2>
           </div>
           <div className={styles.stat}>
-            <p>Transactions analyzed</p>
-            <h2 className={`${styles.bigNumber} ${styles.highlight}`}>10M+</h2>
+            <p className={styles.statTitle}>Transactions analyzed</p>
+            <h2 className={styles.bigNumber}>10M+</h2>
           </div>
         </div>
 
         <div className={styles.aboutGroups}>
           <div className={styles.aboutGroup}>
-            <h4>The Culture</h4>
+            <h4 className={styles.aboutGroupTitle}>The Culture</h4>
             <p>
               We strongly believe there's always an opportunity to learn from
               each other outside of day-to-day work, whether it's company-wide
@@ -81,7 +85,7 @@ export default function About() {
             </p>
           </div>
           <div className={styles.aboutGroup}>
-            <h4>The People</h4>
+            <h4 className={styles.aboutGroupTitle}>The People</h4>
             <p>
               We're all passionate about building a more efficient and inclusive
               financial infrastructure together. At PayAPI, we have diverse
