@@ -1,5 +1,6 @@
 .primary,
-.secondary {
+.secondary,
+.secondary-dark {
   border-radius: 1.5rem;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -21,7 +22,8 @@
   background-color: var(--btnPrimaryHover);
 }
 
-.secondary {
+.secondary,
+.secondary-dark {
   background-color: transparent;
   color: inherit;
   border: 1px solid;
@@ -32,6 +34,11 @@
 .secondary:hover {
   background-color: var(--btnSecondaryHover);
   color: var(--btnSecondaryHoverText);
+}
+
+.secondary-dark:hover {
+  background-color: white;
+  color: var(--darkAppBg);
 }
 
 @media (min-width: 573px) {

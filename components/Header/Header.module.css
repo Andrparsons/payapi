@@ -20,6 +20,7 @@
 }
 
 .pageLink {
+  color: var(--HeaderColor);
   font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.2;

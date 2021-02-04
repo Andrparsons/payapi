@@ -90,7 +90,7 @@ export default function Home() {
                 </p>
                 <Link href="/about">
                   <a>
-                    <Button btnStyle="secondary">About Us</Button>
+                    <Button btnStyle="secondary-dark">About Us</Button>
                   </a>
                 </Link>
               </div>
