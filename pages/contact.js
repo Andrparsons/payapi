@@ -42,6 +42,7 @@ export default function Contact() {
               required={true}
               value={name}
               setValue={setName}
+              style='contactInput'
             />
             <FormInput
               type="email"
@@ -49,23 +50,27 @@ export default function Contact() {
               required={true}
               value={email}
               setValue={setEmail}
+              style='contactInput'
             />
             <FormInput
               type="text"
               placeholder="Company Name"
               value={company}
               setValue={setCompany}
+              style='contactInput'
             />
             <FormInput
               type="text"
               placeholder="Title"
               value={title}
               setValue={setTitle}
+              style='contactInput'
             />
             <FormTextarea
               placeholder="Message"
               value={message}
               setValue={setMessage}
+              style='contactInput'
             />
             <input type="checkbox" />
             <label>
