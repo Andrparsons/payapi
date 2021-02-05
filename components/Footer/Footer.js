@@ -31,9 +31,15 @@ export default function Footer() {
             </Link>
           </div>
           <div className={styles.footerIcons}>
-            <Facebook />
-            <Twitter />
-            <Linkedin />
+            <a className={styles.iconLink} href="https://www.facebook.com">
+              <Facebook />
+            </a>
+            <a className={styles.iconLink} href="https://www.twitter.com">
+              <Twitter />
+            </a>
+            <a className={styles.iconLink} href="https://www.linkedin.com">
+              <Linkedin />
+            </a>
           </div>
         </div>
       </Container>

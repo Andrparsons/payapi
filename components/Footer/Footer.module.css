@@ -41,6 +41,14 @@
   margin-bottom: 0;
 }
 
+.footerLink:hover {
+  opacity: 1;
+}
+
+.iconLink:hover {
+  color: var(--highlightTextColour);
+}
+
 @media (min-width: 730px) {
   .footer {
     padding: 1.875rem 0;
