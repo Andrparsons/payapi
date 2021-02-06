@@ -2,7 +2,6 @@
 .ctaSpace {
   width: 100%;
   min-width: 0;
-  /* max-width: 430px; */
   color: var(--textColour);
   border-radius: 1.5rem;
   border: none;
@@ -24,7 +23,6 @@
 .contactInput {
   width: 100%;
   min-width: 0;
-  /* max-width: 430px; */
   border: none;
   border-bottom: solid 1px var(--borderColour);
   font-size: 0.9375rem;
@@ -33,4 +31,5 @@
   margin-bottom: 1.5rem;
   color: var(--inputColour);
   background-color: transparent;
+  resize: none;
 }
